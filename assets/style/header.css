@@ -136,3 +136,10 @@ menu{
     }
     
 }
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+}
