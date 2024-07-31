@@ -1,0 +1,122 @@
+header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    margin-top: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205);
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.logo img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.menu{
+    display: none;
+}
+
+#nav ul{
+    box-sizing: border-box;
+    display: flex;
+    gap: 5rem;
+}
+
+#nav li{
+    list-style: none;
+}
+
+#nav a{
+    text-decoration: none;
+    color: var(--cor-cinza-escuro);
+    font-family: var(--fonte-padrao);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+.btn{
+    display: flex;
+    gap: 2rem;
+}
+
+.btn button{
+    background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro), var(--cor-cinza-claro));
+    color: var(--cor-branco);
+    width: 200px;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px 0px 50px 0;
+    border: none;
+    cursor: pointer;
+}
+
+menu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1820px) {
+    header nav {
+        gap: 3rem;
+    }
+    header nav a {
+        font-size: 1.5rem;
+    }
+    header .btn button {
+        width: 160px;
+        padding: 0.7rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    header nav {
+        gap: 2rem;
+    }
+    header nav a {
+        font-size: 1.2rem;
+    }
+    header .btn{
+        gap: 1rem;
+    }
+    header .btn button {
+        width: 120px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo{
+        width: 90px;
+        height: 90px;
+    }
+    header #nav {
+        display: none;
+    }
+    
+    #nav.active #menu-mobile{
+        display: flex;
+    }
+
+    header .menu{
+        display: block;
+    }
+
+    header .btn{
+        display: none;
+    }
+    
+}
