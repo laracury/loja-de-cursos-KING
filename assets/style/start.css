@@ -1,6 +1,7 @@
 .start{
     display: block;
     max-width: 1500px;
+    height: auto;
     margin: 3rem auto;
     position: relative;
 }
@@ -95,6 +96,6 @@
     .box-start .text-start p{
         font-size: 1.2rem;
         text-align: justify;
-        white-space: nowrap;
+        white-space: nowrap; /*Retira espaços em branco*/
     }
 }
