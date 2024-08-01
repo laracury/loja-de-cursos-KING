@@ -1,7 +1,8 @@
 .start{
     display: block;
-    max-width: 2000px;
+    max-width: 1500px;
     margin: 3rem auto;
+    position: relative;
 }
 
 .start h1{
@@ -18,7 +19,8 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 2.5rem;
-    height: auto;
+    height: 600px;
+    position: absolute;
 }
 
 .text-start{
@@ -34,9 +36,9 @@
     font-family: var(--fonte-padrao);
     font-size: 1.5rem;
     font-weight: bold;
-    text-indent: 1.5rem;
     text-align: justify;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    margin-left: 3.5rem;
 }
 
 .box-start button{
@@ -49,12 +51,50 @@
     font-weight: bold;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .img-start{
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-start img{
-    padding: 2rem;
+    width: 500px;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .start h1{
+        font-size: 2rem;
+    }
+    .box-start .text-start p{
+        font-size: 1.2rem;
+    }
+    .text-start button{
+        width: 300px;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .img-start img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .start h1{
+        font-size: 1.5rem;
+    }
+    .box-start{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .box-start .text-start p{
+        font-size: 1.2rem;
+        text-align: justify;
+        white-space: nowrap;
+    }
 }
