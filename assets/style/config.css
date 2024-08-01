@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: var(--cor-fundo);
 }
 
 :root{
@@ -13,6 +14,7 @@
     --cor-branco: #fff;
     --cor-cinza-claro: #d1d0d0;
     --cor-cinza-escuro: #474747;
+    --cor-fundo: #f8f5f5;
 
     --fonte-padrao: 'Roboto', Arial, sans-serif;
     --fonte-destaque: 'Montserrat', Times, sans-serif;

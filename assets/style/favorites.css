@@ -52,3 +52,9 @@
     margin: 0 1rem;
     border-radius: 5px;
 }
+
+i{
+    color: var(--cor-branco);
+    background-color: black;
+    margin-left: 10px;
+}
