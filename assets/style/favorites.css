@@ -1,0 +1,13 @@
+.h1-favorites{
+    font-family: var(--fonte-destaque);
+    color: var(--cor-cinza-escuro);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.favorites{
+    display: flex;
+    flex-wrap: wrap;
+}
