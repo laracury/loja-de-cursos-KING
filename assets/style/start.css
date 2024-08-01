@@ -6,9 +6,9 @@
     gap: 7rem;
 }
 
-.start h1{
-    top: 150px;
-    position: fixed;
+.h1-start{
+    margin-top: 1rem;
+    text-align: center;
     font-family: var(--fonte-destaque);
     font-size: 2.4rem;
     color: var(--cor-cinza-escuro);
@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .text-start p{
@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .img-start img{
@@ -63,7 +63,7 @@
     .start{ 
         gap: 2rem;
     }
-    .start h1{
+    .h1-start{
         font-size: 2rem;
     }
     .start .text-start p{
@@ -84,10 +84,31 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    .start h1{
+    .h1-start{
         font-size: 1.5rem;
     }
     .start .text-start p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+    .img-start img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .h1-start{
+        font-size: 1.1rem;
+    }
+    .start .text-start p{
+        font-size: 1rem;
+        margin-left: 0;
+    }
+    .img-start img{
+        width: 300px;
+    }
+    .start .text-start button{
+        font-size: 1.1rem;
+        height: 1.5rem;
+        width: 250px;
     }
 }
