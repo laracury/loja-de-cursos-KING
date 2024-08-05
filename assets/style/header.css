@@ -1,23 +1,21 @@
 header{
     display: flex;
+    position: fixed;
     width: 100%;
-    height: auto;
-    justify-content: space-around;
-    margin-top: 1rem;
+    height: 100px;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
+    background-color: var(--cor-cinza-escuro);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205);
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
+header .logo h1{
+    font-family: var(--fonte-destaque);
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--cor-cinza-escuro);
 }
 
-.logo img{
-    width: 100%;
-    border-radius: 50%;
-}
 
 .menu{
     display: none;
@@ -27,15 +25,18 @@ header{
     box-sizing: border-box;
     display: flex;
     gap: 5rem;
+    background-color: var(--cor-cinza-escuro);
 }
 
 #nav li{
     list-style: none;
+    background-color: var(--cor-cinza-escuro);
 }
 
 #nav a{
     text-decoration: none;
-    color: var(--cor-cinza-escuro);
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-branco);
     font-family: var(--fonte-padrao);
     font-size: 1.6rem;
     font-weight: bold;
@@ -46,19 +47,32 @@ header{
 .btn{
     display: flex;
     gap: 2rem;
+    padding-right: 2rem;
+    background-color: var(--cor-cinza-escuro);
 }
 
 .btn button{
-    background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro), var(--cor-cinza-claro));
-    color: var(--cor-branco);
-    width: 200px;
-    padding: 1rem 2rem;
+    background-color: rgb(233, 230, 230);
+    color: var(--cor-cinza-escuro);
+    width: 180px;
+    padding: .5rem 0;
     font-size: 1.3rem;
     font-weight: bold;
-    border-radius: 50px 0px 50px 0;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
+
+.btn a{
+    border-radius: 5px;
+}
+
+.btn button:hover{
+    transition: 1.5s;
+    background-color: var(--cor-cinza-escuro);
+    color: white;
+}
+
 
 menu{
     display: none;
@@ -89,6 +103,11 @@ menu{
 }
 @media only screen and (max-width: 1100px) {
     .logo{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-left: 1rem;
+        background-color: var(--cor-cinza-escuro);
         width: 90px;
         height: 90px;
     }
@@ -112,6 +131,11 @@ menu{
         align-items: center;
     }
     .logo{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-left: 1rem;
+        background-color: var(--cor-cinza-escuro);
         width: 90px;
         height: 90px;
     }
@@ -124,11 +148,15 @@ menu{
     }
 
     header .menu{
+        background-color: var(--cor-cinza-escuro);
         display: block;
         cursor: pointer;
+        margin-right: 1rem;
+        color: white;
     }
     header .menu i{
         font-size: 2.5rem;
+        background-color: var(--cor-cinza-escuro);
     }
 
     header .btn{

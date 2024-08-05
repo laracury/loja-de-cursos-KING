@@ -1,114 +1,79 @@
-.h1-start{
-    margin-top: 1rem;
-    text-align: center;
-    font-family: var(--fonte-destaque);
-    font-size: 2.4rem;
-    color: var(--cor-cinza-escuro);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
-}
-
 .start{
+    position: absolute;
+    margin-top: 6.8rem;
+    margin-left: 20%;
+    width: 1600px;
+    height: 80vh;
+    border: 1px solid black;
+    background-image: url('../img/leao_da_king.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    gap: 7rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
 }
 
-.text-start{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.text-start p{
-    color: var(--cor-preto);
-    font-family: var(--fonte-padrao);
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: justify;
-    margin-bottom: 2rem;
-    margin-left: 3.5rem;
-}
-
-.text-start button{
-    background-color: var(--cor-preto);
-    color: var(--cor-branco);
-    width: 400px;
-    height: 2.5rem;
+.start .show-h1{
+    z-index: 1000;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
     font-family: var(--fonte-destaque);
-    font-size: 1.2rem;
-    font-weight: bold;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
-    border-radius: 5px;
-    cursor: pointer;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.377);
 }
 
-.img-start{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 6rem;
+.show-h1{
+    animation: show-h1 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
-.img-start img{
-    width: 500px;
-    border-radius: 5px;
+@keyframes show-h1{
+    0% {
+        transform: translateY(100px);
+      }
+    100% {
+    transform: translateY(0);
+    }
 }
 
 
-@media only screen and (max-width: 1150px){
-    .start{ 
-        gap: 2rem;
-    }
-    .h1-start{
-        font-size: 2rem;
-    }
-    .start .text-start p{
-        margin-left: 2rem;
-        font-size: 1.2rem;
-    }
-    .start .text-start button{
-        width: 300px;
-        height: 2rem;
-    }
-    .img-start img{
-        width: 400px;
-    }
-}
-
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 2100px) {
     .start{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .h1-start{
-        font-size: 1.5rem;
-    }
-    .start .text-start p{
-        font-size: 1.1rem;
-    }
-    .img-start img{
-        width: 400px;
+        margin-left: 15%;
     }
 }
 
-@media only screen and (max-width: 400px){
-    .h1-start{
-        font-size: 1.1rem;
-    }
-    .start .text-start p{
-        font-size: 1rem;
-        margin-left: 0;
-    }
-    .img-start img{
-        width: 300px;
-    }
-    .start .text-start button{
-        font-size: 1.1rem;
-        height: 1.5rem;
-        width: 250px;
+@media only screen and (max-width: 1900px){
+    .start {
+    margin-left: 10%;
     }
 }
+
+@media only screen and (max-width: 1800px) {
+    .start{
+        width: 1200px;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1340px){
+    .start{
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .start{
+        width: 800px;
+        margin-left: 5%;
+    }
+    .start .show-h1 {
+        font-size: 4rem;
+    }
+
+}
+    

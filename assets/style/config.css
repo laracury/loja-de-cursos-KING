@@ -9,6 +9,9 @@
     background-color: var(--cor-fundo);
 }
 
+html,body{
+    background-color: var(--cor-cinza-claro);
+}
 :root{
     --cor-preto: #000;
     --cor-branco: #fff;
